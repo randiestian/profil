@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randi Estian Pambudi, S.Kom., M.T.I. - Dosen & Peneliti Sistem Informasi IIB Darmajaya</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Randi Estian Pambudi, S.Kom., M.T.I. - Dosen & Peneliti Sistem Informasi">
+    <meta name="description" content="Randi Estian Pambudi, S.Kom., M.T.I. adalah dosen dan peneliti Sistem Informasi di IIB Darmajaya dengan fokus pada Information Systems, Data Mining, Machine Learning, Data Science, AI, dan Web Systems.">
+    <meta name="keywords" content="Randi Estian Pambudi, Randi Estian Pambudi S.Kom M.T.I, Dosen Sistem Informasi, Dosen IIB Darmajaya, Data Mining Researcher, Machine Learning, RPL IIB Darmajaya">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-header {
+            background: rgba(15, 23, 42, 0.85);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-slate-200/80 dark:border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Identity -->
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-brand-600 to-cyan-500 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                        REP
+                    </div>
+                    <div>
+                        <span class="text-base font-extrabold tracking-tight text-slate-900 dark:text-white block leading-tight">Randi Estian Pambudi</span>
+                        <span class="text-xs font-semibold text-brand-600 dark:text-brand-400">S.Kom., M.T.I.</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="#about" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Tentang Saya</a>
+                    <a href="#academic" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Akademik</a>
+                    <a href="#expertise" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Keahlian</a>
+                    <a href="#publications" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Publikasi</a>
+                    <a href="#projects" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Proyek</a>
+                    <a href="#rpl" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Program RPL</a>
+                    <a href="#contact" class="px-3.5 py-2 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 rounded-lg transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Action Button & Dark Mode Toggle -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#contact" class="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs transition-all shadow-md shadow-brand-600/20">
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                        <span>Hubungi Saya</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#about" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Tentang Saya</a>
+            <a href="#academic" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Akademik & Pengajaran</a>
+            <a href="#expertise" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Bidang Keahlian</a>
+            <a href="#publications" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Publikasi Riset</a>
+            <a href="#projects" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Portofolio Proyek</a>
+            <a href="#rpl" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Aktivitas RPL</a>
+            <a href="#contact" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-950/50">Kontak Akademik</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="hero" class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden relative">
+        <div class="absolute inset-0 -z-10 opacity-30 dark:opacity-20 pointer-events-none">
+            <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-400/30 rounded-full blur-3xl"></div>
+            <div class="absolute top-40 right-1/4 w-96 h-96 bg-cyan-400/30 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-50 dark:bg-brand-950/60 border border-brand-200 dark:border-brand-800/60 text-brand-700 dark:text-brand-300 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Dosen & Researcher IIB Darmajaya</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+                        Randi Estian Pambudi, <span class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-500 dark:text-slate-400">S.Kom., M.T.I.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg font-medium text-brand-600 dark:text-brand-400 tracking-wide uppercase font-mono">
+                        “Bridging Information Systems, Data, and Intelligent Technology.”
+                    </p>
+
+                    <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Dosen dan akademisi di bidang Sistem Informasi pada Institut Informatika dan Bisnis Darmajaya. Fokus keilmuan mencakup Sistem Informasi, Data Mining, Machine Learning, Data Science, serta pengembangan sistem berbasis web untuk solusi nyata di masyarakat.
+                    </p>
+
+                    <!-- Buttons CTA -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#publications" class="px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm transition-all shadow-lg shadow-brand-600/25 flex items-center space-x-2">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                            <span>Lihat Publikasi Riset</span>
+                        </a>
+                        <a href="#contact" class="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold text-sm transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-id-card"></i>
+                            <span>Profil Lengkap & CV</span>
+                        </a>
+                    </div>
+
+                    <!-- Academic ID Tags -->
+                    <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-center lg:justify-start gap-3 text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">
+                            <i class="fa-solid fa-graduation-cap text-brand-500 mr-1.5"></i>SINTA ID: 6869570
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">
+                            <i class="fa-solid fa-feather-pointed text-cyan-500 mr-1.5"></i>GARUDA ID: 5612573
+                        </span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono">
+                            <i class="fa-solid fa-building-columns text-emerald-500 mr-1.5"></i>IIB Darmajaya
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Visual / Academic Stats Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white dark:bg-slate-800/90 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700/80 shadow-2xl relative">
+                        <div class="flex items-center space-x-4 pb-6 border-b border-slate-100 dark:border-slate-700">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-700 text-white flex items-center justify-center text-2xl font-bold shadow-lg">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Identitas Akademik</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Prodi S1 Sistem Informasi IIB Darmajaya</p>
+                            </div>
+                        </div>
+
+                        <!-- Grid Statistics -->
+                        <div class="grid grid-cols-2 gap-4 my-6">
+                            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                                <p class="text-3xl font-extrabold text-brand-600 dark:text-brand-400 font-mono">19+</p>
+                                <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">Artikel Artikel Google Scholar</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                                <p class="text-3xl font-extrabold text-cyan-600 dark:text-cyan-400 font-mono">60+</p>
+                                <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">Sitasi Ilmiah</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                                <p class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 font-mono">4</p>
+                                <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">H-Index (Scholar)</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                                <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 font-mono">4</p>
+                                <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">Fokus Riset Utama</p>
+                            </div>
+                        </div>
+
+                        <!-- Academic Philosophy Box -->
+                        <div class="p-4 rounded-2xl bg-brand-50/60 dark:bg-brand-950/40 border border-brand-100 dark:border-brand-900 text-xs italic text-slate-600 dark:text-slate-300">
+                            <p class="font-medium text-center">“Teknologi bukan hanya tentang menyelesaikan masalah, tetapi juga menciptakan dampak yang bermakna bagi manusia, organisasi, dan masyarakat.”</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: TENTANG SAYA -->
+    <section id="about" class="py-20 bg-white dark:bg-slate-950 border-y border-slate-200/80 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">Profil & Biografi</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Tentang Saya</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <div class="lg:col-span-7 space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <p>
+                        <strong class="text-slate-900 dark:text-white font-semibold">Randi Estian Pambudi, S.Kom., M.T.I.</strong> merupakan akademisi dan dosen bidang Sistem Informasi yang memiliki ketertarikan tinggi pada pengembangan teknologi informasi, pengolahan data, <span class="text-brand-600 dark:text-brand-400 font-medium">data mining, machine learning, dan data science</span>.
+                    </p>
+                    <p>
+                        Dalam kegiatan akademik, Randi mengintegrasikan aspek teoritis dan praktis untuk membantu mahasiswa memahami bagaimana teknologi informasi dapat digunakan untuk menyelesaikan permasalahan nyata di industri maupun lingkungan sosial.
+                    </p>
+                    <p>
+                        Selain aktivitas pengajaran, beliau aktif dalam riset dan pengabdian kepada masyarakat. Topik penelitian yang ditekuni antara lain klasifikasi data, prediksi, sistem informasi berbasis web, Sistem Informasi Geografis (SIG), serta pemanfaatan kecerdasan buatan dalam mendukung proses pengambilan keputusan strategis.
+                    </p>
+                    <p>
+                        Ia juga secara aktif terlibat dalam pengelolaan dan implementasi program <strong class="text-slate-900 dark:text-white font-semibold">Rekognisi Pembelajaran Lampau (RPL)</strong> di IIB Darmajaya, membantu memfasilitasi pengakuan pengalaman kerja praktisi menjadi SKS akademik.
+                    </p>
+                </div>
+
+                <!-- Fast Profile Cards -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-graduation-cap text-brand-500"></i>
+                            <span>Riwayat Pendidikan Resmi</span>
+                        </h4>
+                        <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+                            <li class="flex justify-between items-center pb-2 border-b border-slate-200/60 dark:border-slate-800">
+                                <div>
+                                    <p class="font-bold text-slate-900 dark:text-white">Magister Teknologi Informasi (M.T.I.)</p>
+                                    <p class="text-slate-500">Program Pascasarjana Magister</p>
+                                </div>
+                                <span class="px-2.5 py-1 bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300 rounded font-mono font-bold">S2</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-bold text-slate-900 dark:text-white">Sarjana Komputer (S.Kom.)</p>
+                                    <p class="text-slate-500">Program S1 Ilmu Komputer / Sistem Informasi</p>
+                                </div>
+                                <span class="px-2.5 py-1 bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300 rounded font-mono font-bold">S1</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-link text-emerald-500"></i>
+                            <span>Tautan Profil Resmi</span>
+                        </h4>
+                        <div class="flex flex-col space-y-2 text-xs font-semibold">
+                            <a href="https://sinta.kemdikbud.go.id" target="_blank" class="p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-between text-slate-700 dark:text-slate-200 hover:border-brand-500 transition-colors">
+                                <span class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-award text-amber-500"></i>
+                                    <span>Profil SINTA Kemendikbud</span>
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400"></i>
+                            </a>
+                            <a href="https://garuda.kemdikbud.go.id" target="_blank" class="p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-between text-slate-700 dark:text-slate-200 hover:border-brand-500 transition-colors">
+                                <span class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-feather text-cyan-500"></i>
+                                    <span>Profil GARUDA Ristekdikti</span>
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KEAHLIAN & TEKNOLOGI -->
+    <section id="expertise" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">Bidang Riset & Penguasaan Teknis</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Bidang Keahlian & Teknologi</h3>
+            </div>
+
+            <!-- 6 Major Expertise Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-brand-50 dark:bg-brand-950/60 text-brand-600 dark:text-brand-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        01
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Information Systems</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Perancangan, pengembangan, analisis, implementasi, dan evaluasi sistem informasi tata kelola organisasi.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        02
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Data Mining</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Eksplorasi data berskala besar untuk menemukan pola tersembunyi guna mendukung pengambilan keputusan.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        03
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Machine Learning</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Penerapan algoritma prediktif dan klasifikasi cerdas seperti Decision Tree C4.5, Naive Bayes, dan Regresi.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        04
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Data Science</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Pengolahan dan pemodelan data terstruktur untuk menghasilkan insight yang komprehensif bagi institusi.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        05
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Web-Based Systems</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Pengembangan aplikasi web modern menggunakan arsitektur MVC, framework PHP, dan pengelolaan database relational.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 card-hover space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center font-mono font-extrabold text-sm">
+                        06
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Artificial Intelligence</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Integrasi pemodelan AI untuk automasi analisis data kesehatan, pendidikan, dan sektor publik.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Tech Stack Pills -->
+            <div class="mt-12 bg-white dark:bg-slate-800/80 p-6 rounded-2xl border border-slate-200 dark:border-slate-700">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4 text-center">Teknologi & Toolsets yang Dikuasai</h4>
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-brands fa-php text-indigo-500 mr-1.5"></i>PHP</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-brands fa-js text-amber-500 mr-1.5"></i>JavaScript</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-brands fa-html5 text-orange-500 mr-1.5"></i>HTML5 & CSS3</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-solid fa-fire text-rose-500 mr-1.5"></i>CodeIgniter</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-solid fa-database text-cyan-500 mr-1.5"></i>MySQL</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-solid fa-diagram-project text-emerald-500 mr-1.5"></i>Algoritma C4.5</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-solid fa-calculator text-blue-500 mr-1.5"></i>Naive Bayes</span>
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300"><i class="fa-solid fa-map-location-dot text-rose-500 mr-1.5"></i>GIS Web</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: AKADEMIK & MATA KULIAH -->
+    <section id="academic" class="py-20 bg-white dark:bg-slate-950 border-t border-slate-200/80 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">Pengajaran & Peran</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Aktivitas Akademik & Mata Kuliah</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Courses List -->
+                <div class="lg:col-span-7 space-y-4">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base mb-2 flex items-center space-x-2">
+                        <i class="fa-solid fa-chalkboard-user text-brand-600"></i>
+                        <span>Mata Kuliah Diampu</span>
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
+                            <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300">PEMROGRAMAN</span>
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Structured Programming</h5>
+                            <p class="text-xs text-slate-500">Pemrograman terstruktur & logika algoritma dasar.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
+                            <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-300">DATABASE</span>
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Basis Data Lanjut</h5>
+                            <p class="text-xs text-slate-500">Perancangan skema relasional & optimasi query.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
+                            <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300">SECURITY</span>
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Keamanan Sistem Informasi</h5>
+                            <p class="text-xs text-slate-500">Prinsip proteksi aset data & infrastruktur informasi.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 space-y-2">
+                            <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">ANALYSIS</span>
+                            <h5 class="font-bold text-slate-900 dark:text-white text-sm">Analisis & Perancangan SI</h5>
+                            <p class="text-xs text-slate-500">Pemodelan UML & perancangan arsitektur perangkat lunak.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Role Summary -->
+                <div class="lg:col-span-5 bg-gradient-to-br from-brand-900 to-slate-900 text-white p-6 rounded-3xl space-y-4 shadow-xl">
+                    <h4 class="font-bold text-base text-brand-300">Peran Akademik Utama</h4>
+                    <ul class="space-y-3 text-xs leading-relaxed text-slate-300">
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong>Pengajaran & Pembimbingan:</strong> Mengampu perkuliahan teori dan praktikum di Prodi S1 Sistem Informasi IIB Darmajaya.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong>Penelitian Terapan:</strong> Mengembangkan pemodelan Data Mining dan Machine Learning untuk sektor publik & pendidikan.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong>Pengabdian Masyarakat (PKM):</strong> Mentransfer pengetahuan teknologi kepada guru, sekolah, dan BUMDes.</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                            <span><strong>Asesmen Program RPL:</strong> Aktif melakukan wawancara dan verifikasi berkas rekognisi pembelajaran lampau.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PUBLIKASI ILMIAH -->
+    <section id="publications" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">Hasil Riset Terpublikasi</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Publikasi Ilmiah Pilihan</h3>
+            </div>
+
+            <!-- Publications Grid -->
+            <div class="space-y-4 max-w-4xl mx-auto">
+                
+                <!-- Publication Item 1 -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 card-hover space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="px-2.5 py-0.5 rounded font-mono font-bold bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400">Jurnal TEKNIKA (2026)</span>
+                        <span class="text-slate-400 font-mono">DOI: 10.5281/zenodo.17718509</span>
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Sistem Informasi Rekam Medis Elektronik pada Puskesmas Berbasis Web di Puskesmas Brabasan</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Penulis: Feny Wulandari & Randi Estian Pambudi</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">Membahas rancang bangun sistem informasi rekam medis elektronik berbasis web menggunakan PHP & MySQL untuk efisiensi pelayanan kesehatan.</p>
+                </div>
+
+                <!-- Publication Item 2 -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 card-hover space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="px-2.5 py-0.5 rounded font-mono font-bold bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400">SIMADA Jurnal (2025)</span>
+                        <span class="text-slate-400 font-mono">DOI: 10.30873/simada.v8i1.1382</span>
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Pemanfaatan Data Mining dalam Pengambilan Keputusan Strategis pada Pengelolaan BUMDes</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Penulis: Fuad Azhar & Randi Estian Pambudi</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">Penerapan teknik penggalian data untuk memberikan rekomendasi keputusan strategis tata kelola bisnis desa.</p>
+                </div>
+
+                <!-- Publication Item 3 -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 card-hover space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="px-2.5 py-0.5 rounded font-mono font-bold bg-cyan-50 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400">Jurnal JUPITER (2024)</span>
+                        <span class="text-slate-400 font-mono">Algorithm: C4.5 Decision Tree</span>
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Data Mining to Predict Student Achievement Based on Socio-Economic & Discipline Using C4.5</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Penulis: Suroto, Hendri Purnomo & Randi Estian Pambudi</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">Memprediksi prestasi akademik siswa SMK berdasarkan faktor sosio-ekonomi dan disiplin belajar.</p>
+                </div>
+
+                <!-- Publication Item 4 -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 card-hover space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="px-2.5 py-0.5 rounded font-mono font-bold bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400">Jurnal JTI Mura (2024)</span>
+                        <span class="text-slate-400 font-mono">DOI: 10.32767/jti.v16i2.2507</span>
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Prediksi Prestasi Akademik Menggunakan Naive Bayes Logistic Regression</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Penulis: Randi Estian Pambudi, Hendri Purnomo & Rendi Irawan</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">Pemanfaatan data kehadiran dan aktivitas belajar untuk estimasi capaian nilai akhir akademik.</p>
+                </div>
+
+                <!-- Publication Item 5 -->
+                <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 card-hover space-y-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="px-2.5 py-0.5 rounded font-mono font-bold bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400">Jurnal TEKNIKA (2022)</span>
+                        <span class="text-slate-400 font-mono">Healthcare AI Classification</span>
+                    </div>
+                    <h4 class="font-bold text-slate-900 dark:text-white text-base">Klasifikasi Penyakit Stroke Menggunakan Algoritma Decision Tree C4.5</h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Penulis: Randi Estian Pambudi, Sriyanto & Firmansyah</p>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">Pengaplikasian algoritma pohon keputusan C4.5 untuk mendukung diagnosis dini potensi risiko stroke.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: PORTOFOLIO PROYEK & APLIKASI -->
+    <section id="projects" class="py-20 bg-slate-100 dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">Implementasi Aplikasi</h2>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Portofolio Proyek Sistem & Aplikasi</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Project Card 1 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 card-hover flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-base">Electronic Medical Record System</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Sistem informasi rekam medis elektronik terintegrasi berbasis web untuk efisiensi layanan puskesmas.
+                        </p>
+                    </div>
+                    <div class="px-6 py-3 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+                        <span>PHP • MySQL</span>
+                        <span>Web App</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 card-hover flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-base">GIS Waste Disposal Mapping</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Sistem Informasi Geografis pemetaan lokasi pembuangan sampah legal berbasis web di Kota Bandar Lampung.
+                        </p>
+                    </div>
+                    <div class="px-6 py-3 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+                        <span>GIS • Web • MySQL</span>
+                        <span>Spatial Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 card-hover flex flex-col justify-between">
+                    <div class="p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-base">Service Order System</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Aplikasi web pemesanan jasa servis komputer dan laptop menggunakan Framework CodeIgniter.
+                        </p>
+                    </div>
+                    <div class="px-6 py-3 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+                        <span>CodeIgniter • PHP</span>
+                        <span>Service System</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PROGRAM RPL & PENGABDIAN -->
+    <section id="rpl" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-50 dark:bg-brand-950 border border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-300 text-xs font-semibold">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Program Unggulan Akademik</span>
+                    </div>
+
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                        Pengelolaan & Asesmen Rekognisi Pembelajaran Lampau (RPL)
+                    </h3>
+
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Randi Estian Pambudi aktif terlibat dalam pengelolaan dan pengembangan kegiatan Rekognisi Pembelajaran Lampau (RPL) di lingkungan IIB Darmajaya, membantu memfasilitasi pengakuan pengalaman kerja praktisi menjadi SKS akademik resmi.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-slate-200 flex items-center space-x-2">
+                            <i class="fa-solid fa-bullhorn text-brand-500"></i>
+                            <span>Sosialisasi & Edukasi</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-slate-200 flex items-center space-x-2">
+                            <i class="fa-solid fa-file-signature text-emerald-500"></i>
+                            <span>Asesmen Portofolio</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-slate-200 flex items-center space-x-2">
+                            <i class="fa-solid fa-comments text-cyan-500"></i>
+                            <span>Wawancara Kompetensi</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-semibold text-slate-700 dark:text-slate-200 flex items-center space-x-2">
+                            <i class="fa-solid fa-handshake text-indigo-500"></i>
+                            <span>Kolaborasi Industri</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900 text-xs text-amber-800 dark:text-amber-300">
+                        <p class="font-bold mb-1"><i class="fa-solid fa-star mr-1"></i>Aktivitas RPL Terkini (Agustus 2026):</p>
+                        <p>Memaparkan program RPL Sistem Informasi IIB Darmajaya pada kegiatan kolaborasi bersama APJII Wilayah Lampung dan Komdigi.</p>
+                    </div>
+                </div>
+
+                <!-- PKM Box -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-xl space-y-6">
+                    <h4 class="font-bold text-slate-900 dark:text-white text-lg flex items-center space-x-2">
+                        <i class="fa-solid fa-people-group text-brand-600"></i>
+                        <span>Pengabdian Kepada Masyarakat (PKM)</span>
+                    </h4>
+
+                    <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-700 space-y-2">
+                        <span class="text-[10px] font-mono font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-950 px-2 py-0.5 rounded">9 JULI 2024</span>
+                        <h5 class="font-bold text-slate-900 dark:text-white text-sm">Pelatihan Canva sebagai Media Pembelajaran Digital</h5>
+                        <p class="text-xs text-slate-500">Lokasi: SD IT Asmaul Husna Gedongtataan, Pesawaran</p>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">
+                            Diikuti oleh 30 guru untuk meningkatkan kompetensi pembuatan media pembelajaran berbasis visual interaktif.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: KONTAK & FOOTER -->
+    <footer id="contact" class="bg-slate-950 text-white pt-20 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-3">
+                    <h3 class="text-2xl font-extrabold">Mari Berkolaborasi dalam Riset & Akademik</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">
+                        Terbuka untuk diskusi penelitian, kolaborasi pengabdian masyarakat, konsultasi sistem informasi, dan program RPL IIB Darmajaya.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 flex flex-wrap gap-3 lg:justify-end">
+                    <a href="mailto:randi.estian@darmajaya.ac.id" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 font-semibold text-xs transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Kirim Email Akademik</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+                <p>© 2026 Randi Estian Pambudi, S.Kom., M.T.I. All rights reserved.</p>
+                <p>Program Studi Sistem Informasi — IIB Darmajaya Bandar Lampung</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking nav link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
